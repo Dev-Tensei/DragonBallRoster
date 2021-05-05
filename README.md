@@ -1,4 +1,13 @@
-# My Dragonball Project
+# DragonBall Roster
+
+This is a web app that allows users to display their favorite characters from the Dragon Ball universe in a roster format.
+
+The client is built with HTML, CSS, and Javascript. The backend is built with Python and has a CRUD structure so users can create, retrieve, update, and delete their Dragon Ball roster as needed.
+
+A login/registration functionality has also been implemented. It is done through a SessionStore class(in session_store.py) that creates/retrieves a user session and generates a session ID for every user.
+
+
+![DragonBall Roster Show Case](https://github.com/Dev-Tensei/DragonBallRoster/blob/main/client/images/app_showcase.png?raw=true)
 
 ## Resource
 
@@ -16,7 +25,7 @@ Attributes:
 ## Schema
 
 ```sql
-CREATE TABLE restaurants (
+CREATE TABLE characters (
 id INTEGER PRIMARY KEY,
 name TEXT,
 power TEXT,
@@ -30,11 +39,11 @@ rating INTEGER);
 
 Name                           | Method | Path
 -------------------------------|--------|------------------
-Retrieve restaurant collection | GET    | /characters
-Retrieve restaurant member     | GET    | /characters/*\<id\>*
-Create restaurant member       | POST   | /characters
-Update restaurant member       | PUT    | /characters/*\<id\>*
-Delete restaurant member       | DELETE | /characters/*\<id\>*
+Retrieve character collection | GET    | /characters
+Retrieve character member     | GET    | /characters/*\<id\>*
+Create character member       | POST   | /characters
+Update character member       | PUT    | /characters/*\<id\>*
+Delete character member       | DELETE | /characters/*\<id\>*
 
 ## Resource
 
@@ -65,4 +74,3 @@ Name                           | Method | Path
 Create user                    | POST   | /users
 Create user session            | POST   | /session
 
-# f19-authentication-Dev-Tensei
