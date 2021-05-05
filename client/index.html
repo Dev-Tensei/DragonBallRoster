@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DragonBall</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body id="background-image">
+		<ul id="orange">
+		  <li id="right"><a id="logbut" onclick="showLogDiv()">Log In</a></li>
+<!-- 		  <li id="right"><a href="#news">Pro Scene</a></li>
+		  <li id="right"><a href="#contact">Characters</a></li> -->
+		  <li style="float:left"><a onclick="showHomeDiv()" id="logo">Saiyan Fight Club</a></li>
+		</ul>
+
+<!-- 		<ul id="welcomeul">
+		  <li id="right"><a onclick="showLogDiv()">Log In</a></li>
+		</ul>
+ -->
+		<div id="home">
+			<section class="hero">
+				<div class="hero-inner">
+					<h1>Here comes a new challenger!</h1>
+				</div>
+			</section>
+
+<!-- 			<br><br><br><br><br><br> -->
+
+			<div id="background-red">
+				<h1 id="divRed">Who's the strongest?</h1>
+				<div id="divRed">
+					<div class="form-in">
+						<label>Name:</label>
+						<input type="text" id="new-character-name">
+
+						<label>Power:</label>
+						<input type="text" id="new-character-power">
+
+
+						<label>Technique:</label>
+						<input type="text" id="new-character-technique">
+
+
+						<label>Speed:</label>
+						<input type="text" id="new-character-speed">
+
+						<label>Difficulty:</label>
+						<input type="text" id="new-character-difficulty">
+
+						<label>Rating:</label>
+						<input type="number" id="new-character-rating">
+						<div id="addboton">
+							<button type="submit" class="button" id="add">Add Character</button>
+						</div>
+
+						<div id="updateboton">
+							<button type="submit" class="button" id="update">Update</button>
+						</div>
+					</div>
+					
+				</div>
+
+			    <ol id="characters">
+			    </ol>
+			</div>
+		</div>
+
+<!-- 		<div id="welcomepage">
+			<h1 id="homedisplay">Welcome</h1>
+		</div> -->
+
+		<div id="loginscreen">
+			<div class="logincontainer">
+			<!--<img src="images/gokunimbus.png" class="flyingnimbus"> -->
+				<div id="log">
+				<h1>Log In</h1>
+				<br>
+					<p>Username</p>
+					<input id="user-email" type="text" name="" placeholder="Enter Username">
+					<p>Password</p>
+					<input id="user-password" type="password" name="" placeholder="Enter Password">
+					<button id="login" type="submit" name="" value="login">Log In</button>
+					<a onclick="displayRegister()">Don't have an account?</a>
+				</div>
+				<div id="registerscreen">
+				<h1>Register</h1>
+				<br>
+					<p>First Name</p>
+					<input id="new-user-fname" type="text" name="" placeholder="Enter Username">
+					<p>Last Name</p>
+					<input id="new-user-lname" type="text" name="" placeholder="Enter Password">
+					<p>E-mail</p>
+					<input id="new-user-email" type="email" name="" placeholder="Enter E-mail">
+					<p>Password</p>
+					<input id="new-user-password" type="password" name="" placeholder="Enter Password">
+
+					<button type="submit" name="" value="login" id="register">Register</button>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
